@@ -16,8 +16,8 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-
-print("Select operation.")
+# Added politeness to user requests
+print("If you are not too busy, please select an operation....")
 print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
@@ -25,12 +25,12 @@ print("4.Divide")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4) please: ")
 
     # Check if choice is one of the four options
     if choice in ('1', '2', '3', '4'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        num1 = float(input("Enter first number please: "))
+        num2 = float(input("Enter second number please: "))
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
@@ -45,4 +45,4 @@ while True:
             print(num1, "/", num2, "=", divide(num1, num2))
         break
     else:
-        print("Invalid Input")
+        print("Sorry, Invalid Input")

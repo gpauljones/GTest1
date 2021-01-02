@@ -17,17 +17,24 @@ def divide(x, y):
     return x / y
 
 
-print("Select operation.\n 1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.exit")
+# Added politeness to user requests
+print("If you are not too busy, please select an operation....")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+print("5.Exit")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4) please: ")
 
-    # Check if choice is one of the four options
+    # Check if choice is one of the five options
     if choice in ('1', '2', '3', '4','5'):
       if choice !='5':
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
+
 
       if choice == '1':
           print(num1, "+", num2, "=", add(num1, num2))
@@ -43,4 +50,4 @@ while True:
           break
 
     else:
-        print("Invalid Input")
+        print("Sorry, Invalid Input")
